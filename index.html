@@ -1,27 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            font-family: -apple-system, system-ui, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            font-size: 3rem;
-            font-weight: 600;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nick Munarriz - Technical Leader & Distributed Systems Architect.">
+  <meta name="keywords" content="Nick Munarriz, Software Engineer, Systems Architect, Distributed Systems, Google, Citadel, Bloomberg, Kafka, Cloud Security, FinTech, High Availability">
+  
+  <!-- OpenGraph Metadata -->
+<meta property="og:title" content="Nick Munarriz | Senior Software Engineer &amp; Technical Leader">  <meta property="og:description" content="Personal portfolio of Nick Munarriz. Specialized in mission-critical distributed systems, Tier-0 cloud security services, and real-time financial data infrastructure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nickmunarriz.github.io">
+  
+  <title>Nick Munarriz | Senior Software Engineer &amp; Technical Leader</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+  <!-- Print-Only Resume Header (Hidden on Screen, Visible on Print) -->
+  <div class="print-header">
+    <h1>Nick Munarriz</h1>
+    <p style="text-align: center; font-weight: 600; margin-top: 2px;">Senior Software Engineer & Technical Leader</p>
+    <div class="print-contact-info" style="text-align: center; font-family: monospace; font-size: 9pt; margin-top: 6px; color: #333;">
+      <span>New York, NY</span> &bull; 
+      <span>nickmunarriz@gmail.com</span>
+    </div>
+    <div class="print-social-info" style="text-align: center; font-family: monospace; font-size: 9pt; margin-top: 4px; color: #333; border-bottom: 1px solid #111; padding-bottom: 8px;">
+      <span>linkedin.com/in/nicholasmunarriz</span> &bull; 
+      <span>github.com/nickmunarriz</span>
+    </div>
+  </div>
+
+  <!-- Background Glow FX -->
+  <div class="bg-glow-top"></div>
+
+  <!-- Floating Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="Nick Munarriz Home">
+        <div class="logo-icon"></div>
+        Nick Munarriz
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-socials" aria-label="Social Profiles">
+        <a href="https://github.com/nickmunarriz" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nicholasmunarriz/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about">
+    <div class="container hero-wrapper">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Senior Software Engineer & Technical Leader</div>
+        <h2 class="hero-title">
+          Designing <span class="gradient-text">Tier-0 Infrastructure</span> & High-Availability Distributed Systems
+        </h2>
+        <p class="hero-description">
+          I architect and scale mission-critical distributed systems where downtime isn't an option. With over a decade of experience across Google, Citadel, and Microsoft, I specialize in Tier-0 cloud security infrastructure, low-latency migrations, and real-time data pipelines processing tens of millions of messages per second. I bridge deep systems engineering with technical leadership—aligning cross-functional teams, driving architectural consensus, and mentoring engineers to deliver high-availability systems at global scale.
+        </p>
+        <div class="hero-cta">
+          <a href="#experience" class="btn btn-primary">
+            Explore Experience
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      
+      <!-- Interactive SVG Network graphic -->
+      <div class="hero-graphic" aria-hidden="true">
+        <div class="sphere-container">
+          <div class="sphere-core"></div>
+          <div class="sphere-ring-1">
+            <div class="node node-1"></div>
+          </div>
+          <div class="sphere-ring-2">
+            <div class="node node-2"></div>
+          </div>
+          <div class="sphere-ring-3">
+            <div class="node node-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact / Stats Grid -->
+  <section id="impact" style="padding: 2rem 0;">
+    <div class="company-logos-container">
+      <p class="logos-title">Built scalable and highly available infrastructure and systems at</p>
+      <div class="logos-grid">
+        <!-- Google -->
+        <div class="logo-item" title="Google">
+          <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        </div>
+        
+        <!-- Citadel -->
+        <div class="logo-item" title="Citadel">
+          <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Citadel_LLC_Logo.svg" alt="Citadel">
+        </div>
+        
+        <!-- Bloomberg -->
+        <div class="logo-item" title="Bloomberg">
+          <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Bloomberg_L.P._logo.svg" alt="Bloomberg">
+        </div>
+        
+        <!-- Microsoft -->
+        <div class="logo-item" title="Microsoft">
+          <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft">
+        </div>
+        
+        <!-- Amazon -->
+        <div class="logo-item" title="Amazon">
+          <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="10" data-suffix="M+">0</div>
+          <div class="stat-label">QPS Supported</div>
+          <div class="stat-desc">Designed and optimized Tier-0 infrastructure running at global scale.</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-number" data-target="35" data-suffix="%">0</div>
+          <div class="stat-label">Retail Trading Volume</div>
+          <div class="stat-desc">Managed Citadel's core Kafka cluster configurations supporting U.S. retail trade.</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-number" data-target="2000" data-suffix="x">0</div>
+          <div class="stat-label">Ingestion Speedup</div>
+          <div class="stat-desc">Overhauled legacy financial data infrastructure, unlocking 2000x latency reduction and eliminating multi-year technical debt.</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-number" data-target="10" data-suffix="+ Yrs">0</div>
+          <div class="stat-label">Engineering Excellence</div>
+          <div class="stat-desc">Architecting complex distributed platforms from initial design to global GA deployment.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      
+      <div class="timeline">
+        
+        <!-- Google Finance Present -->
+        <div class="timeline-item">
+          <div class="timeline-date">Apr 2025 &ndash; Present</div>
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="company-meta">
+              <span class="company-name">Google</span>
+              <span class="company-location">New York, NY</span>
+            </div>
+            <div class="role-title">Senior Software Engineer</div>
+            <div class="role-subteam">Google Finance</div>
+            <ul class="role-bullets">
+              <li>Defined the technical vision and spearheaded a multi-team architecture migration to decouple core financial data structures from client dependencies, securing consensus across 3 partner organizations to adopt a unified API layer.</li>
+              <li>Eliminated high-risk direct database access across all partner teams, substantially improving system security posture and reducing coupling to enable independent development velocity for four separate domains.</li>
+              <li>Integrated low-latency real-time structured financial data retrieval tools into Search AI Mode and Gemini to power generative AI features.</li>
+              <li>Architected and deployed a high-scale Vector Search system utilizing embedding vectors to power semantic data retrieval for Gemini integrations, bypassing keyword-matching limitations.</li>
+              <li>Designed and successfully launched large-scale 3rd party data ingestion systems, mentoring the core engineering team on implementation and deployment.</li>
+              <li>Developed and implemented a new globally consistent and scalable UUID system to meet future roadmap and scalability requirements for all finance-related entities.</li>
+              <li>Guided client team migration onto my new UUID system, coordinating dependency updates across critical client teams and ensuring seamless integration with zero production downtime.</li>
+              <li>Built and launched critical new data integrations including news and prediction markets for <a href="https://www.google.com/finance/beta" target="_blank" rel="noopener noreferrer" class="timeline-link">Finance Hub</a>.</li>
+            </ul>
+            <div class="tag-container">
+              <span class="tag">Distributed Systems</span>
+              <span class="tag">API Design</span>
+              <span class="tag">AI Infrastructure Integration</span>
+              <span class="tag">Semantic Embedding Generation</span>
+              <span class="tag">Vector Search</span>
+              <span class="tag">Real-Time Data Pipelines</span>
+              <span class="tag">Big Data Processing</span>
+              <span class="tag">Technical Leadership</span>
+              <span class="tag">System Decoupling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Citadel -->
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2024 &ndash; Apr 2025</div>
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="company-meta">
+              <span class="company-name">Citadel</span>
+              <span class="company-location">New York, NY</span>
+            </div>
+            <div class="role-title">Software Engineer (Senior Equivalent)</div>
+            <div class="role-subteam">Platform Engineering &ndash; Kafka and Cloud Architecture</div>
+            <ul class="role-bullets">
+              <li>Managed dozens of mission-critical Kafka clusters processing tens of millions of messages per second, ensuring the reliability of systems supporting 35% of all U.S. retail trading volume.</li>
+              <li>Led the decoupling of control plane dependencies from data plane operations to ensure 24/7 trading availability.</li>
+              <li>Integrated Kafka usage with anti-pattern detection system to establish architectural guardrails that identified hundreds of thousands of high-risk infrastructure anti-patterns firm-wide</li>
+              <li>Ran reviews with client teams, reviewing architectures across the firm and recommending improvements to make Kafka usage more scalable and reliable.</li>
+              <li>Conducted extensive low-level performance analysis, including kernel parameter and sysctl tuning, to define and deploy optimal Kafka server configurations, maximizing throughput and reducing p99 latency for critical trading platforms.</li>
+            </ul>
+            <div class="tag-container">
+              <span class="tag">Apache Kafka</span>
+              <span class="tag">Low-Latency Systems</span>
+              <span class="tag">High-Throughput Systems</span>
+              <span class="tag">Kernel Tuning</span>
+              <span class="tag">Systems Architecture</span>
+              <span class="tag">Control Plane / Data Plane Separation</span>
+              <span class="tag">Architectural Governance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Finance and Cloud Security & Secret Manager - PAGE BREAK APPLIED FOR PRINT -->
+        <div class="timeline-item print-page-break">
+          <div class="timeline-date">May 2019 &ndash; Jan 2024</div>
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="company-meta">
+              <span class="company-name">Google</span>
+              <span class="company-location">New York, NY</span>
+            </div>
+            <div class="role-title">Senior Software Engineer &amp; Software Engineer</div>
+            <div class="role-subteam">Google Finance (2022-2024)</div>
+            <ul class="role-bullets">
+              <li>Re-engineered the entity metadata ingestion engine for Google Finance, reducing end-to-end latency for processing millions of real-world financial entities from 36 hours to minutes and eliminating significant tech debt.</li>
+              <li>Identified processes using significant engineering resources, developed automation to remove toil where possible, and worked with leadership to onboard a vendor team to handle the remaining tasks efficiently.</li>
+              <li>Built centralized dashboards, accelerating engineering velocity and reducing vendor onboarding friction by consolidating disparate cross-component telemetry into unified operational planes.</li>
+            </ul>
+            <div class="role-subteam">Google Cloud Secret Manager &amp; Distributed Cloud (2019-2022)</div>
+            <ul class="role-bullets">
+              <li>Founding engineer on Google Cloud's Secret Manager team, launching product through Alpha, Beta, and GA launches.</li>
+              <li>Elevated Secret Manager's global market position by owning and implementing features including secret expiration and conditional IAM access, upgrading its Gartner rating.</li>
+              <li>Designed a multi-layered distributed cache to support 10M+ QPS of mission-critical secret material.</li>
+              <li>Served as the lead developer and architect for the product's official gcloud CLI.</li>
+              <li>Published public-facing documentation and videos to educate users on API usage and security features.</li>
+              <li>Led development of automation allowing Secret Manager to turn up in new regions.</li>
+              <li>Maintained 24/7 on-call availability for Tier-0 services for over two years, responding to ~100 production issues and presenting post-mortems to senior leadership.</li>
+            </ul>
+            <div class="tag-container">
+              <span class="tag">Cloud Security</span>
+              <span class="tag">Distributed Caching</span>
+              <span class="tag">CLI/API Architectures</span>
+              <span class="tag">HSM Integration</span>
+              <span class="tag">High Availability (Tier-0)</span>
+              <span class="tag">Multi-Tenant Infrastructure</span>
+              <span class="tag">Data Governance &amp; Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloomberg LP -->
+        <div class="timeline-item">
+          <div class="timeline-date">Mar 2017 &ndash; Apr 2019</div>
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="company-meta">
+              <span class="company-name">Bloomberg LP</span>
+              <span class="company-location">New York, NY</span>
+            </div>
+            <div class="role-title">Software Engineer</div>
+            <div class="role-subteam">MARS (Multi-Asset Risk System) &ndash; BVAL OTC </div>
+            <ul class="role-bullets">
+              <li>Maintained and improved the BVAL OTC feature for batch-pricing complex OTC derivatives.</li>
+              <li>Wrote valuation validation system which uses machine learning to flag suspicious prices for manual review, saving significant financial engineering time.</li>
+              <li>Led redesign of system using Apache Airflow and acted as intern mentor as they implemented the design.</li>
+              <li>Designed software used by the London Stock Exchange for settlement price calculations.</li>
+            </ul>
+            <div class="tag-container">
+              <span class="tag">OTC Derivatives</span>
+              <span class="tag">Predictive Validation Systems</span>
+              <span class="tag">Batch Processing</span>
+              <span class="tag">Apache Airflow</span>
+              <span class="tag">Data Pipelines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Microsoft -->
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2016 &ndash; Feb 2017</div>
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="company-meta">
+              <span class="company-name">Microsoft</span>
+              <span class="company-location">Redmond, WA</span>
+            </div>
+            <div class="role-title">Software Engineer</div>
+            <div class="role-subteam">Office Build Infrastructure</div>
+            <ul class="role-bullets">
+              <li>Co-owned the automated retention system that manages builds of Office across a distributed file system.</li>
+              <li>Implemented a soft-delete based asset recovery system, allowing ephemeral builds to be recovered after deletion if a dependency on them was discovered.</li>
+            </ul>
+            <div class="tag-container">
+              <span class="tag">Distributed File Systems</span>
+              <span class="tag">Asset Recovery</span>
+              <span class="tag">Distributed Asset Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amazon -->
+        <div class="timeline-item">
+          <div class="timeline-date">May 2015 &ndash; Jul 2015</div>
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="company-meta">
+              <span class="company-name">Amazon</span>
+              <span class="company-location">Seattle, WA</span>
+            </div>
+            <div class="role-title">Software Engineering Intern</div>
+            <div class="role-subteam">Amazon Business (B2B) &ndash; Order History Reports</div>
+            <ul class="role-bullets">
+              <li>Redesigned the Order History Reports backend from the ground up, rewriting the entire data access layer.</li>
+              <li>Re-architected relational data schemas into optimized DynamoDB structures to support a large-scale NoSQL migration, eliminating legacy database bottlenecks for order reporting tools.</li>
+            </ul>
+            <div class="tag-container">
+              <span class="tag">Legacy System Modernization</span>
+              <span class="tag">NoSQL Schema Design</span>
+              <span class="tag">Data Access Layer Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education (Integrated in timeline for consistent visual flow) -->
+        <div class="timeline-item">
+          <div class="timeline-date">Jul 2012 &ndash; May 2016</div>
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <div class="company-meta">
+              <span class="company-name">University of Florida</span>
+              <span class="company-location">Gainesville, FL</span>
+            </div>
+            <div class="role-title">Bachelor of Science</div>
+            <div class="role-subteam">Major in Computer Science &amp; Mathematics</div>
+            <ul class="role-bullets">
+              <li>Graduated with a GPA of 3.82/4.00.</li>
+              <li>Selected for the University Scholars Program; conducted Analytic Number Theory Research in SL2(Z).</li>
+              <li>Minor in Business Administration.</li>
+              <li>Served as a mathematics peer instructor at the UF Teaching Center, breaking down complex single and multi-variable calculus concepts to improve academic performance and student outcomes.</li>            </ul>
+            <div class="tag-container">
+              <span class="tag">Academic Research</span>
+              <span class="tag">Number Theory</span>
+              <span class="tag">Mathematics</span>
+              <span class="tag">Computer Science</span>
+              <span class="tag">Technical Instruction</span>
+              <span class="tag">Business Administration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Capabilities</h2>
+      
+      <div class="skills-grid" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem;">
+        
+        <div class="skills-card">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+            Architecture &amp; Systems
+          </h3>
+          <div class="skills-list">
+            <span class="skills-pill">Distributed Systems</span>
+            <span class="skills-pill">System Design</span>
+            <span class="skills-pill">DB Schema Design (Relational &amp; NoSQL)</span>
+            <span class="skills-pill">Cloud Security</span>
+            <span class="skills-pill">API Design</span>
+            <span class="skills-pill">CLI Design</span>
+            <span class="skills-pill">High Availability Tier-0</span>
+            <span class="skills-pill">Apache Kafka</span>
+            <span class="skills-pill">Real-Time Data Processing</span>
+            <span class="skills-pill">FinTech Architecture</span>
+            <span class="skills-pill">AI Context Engineering &amp; Agents</span>
+            <span class="skills-pill">Generative AI Platform Integration</span>
+            <span class="skills-pill">GCP Core Services</span>
+            <span class="skills-pill">Multi-Tenant Infrastructure</span>
+            <span class="skills-pill">Architectural Governance</span>
+            <span class="skills-pill">Data Governance &amp; Compliance</span>
+            <span class="skills-pill">Control Plane / Data Plane Separation</span>
+            <span class="skills-pill">System Observability &amp; Telemetry</span>
+          </div>
+        </div>
+
+        <div class="skills-right-stack" style="display: flex; flex-direction: column; gap: 2rem;">
+          
+          <div class="skills-card" style="flex: 1;">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              Languages &amp; Runtimes
+            </h3>
+            
+            <p class="logos-title" style="font-size: 0.7rem; margin-bottom: 0.5rem; text-align: left;">Core Systems &amp; Services</p>
+            <div class="skills-list" style="margin-bottom: 1.25rem;">
+              <span class="skills-pill">C++</span>
+              <span class="skills-pill">Java</span>
+              <span class="skills-pill">Kotlin</span>
+              <span class="skills-pill">C#</span>
+            </div>
+
+            <p class="logos-title" style="font-size: 0.7rem; margin-bottom: 0.5rem; text-align: left;">Data, Scripting &amp; Automation</p>
+            <div class="skills-list" style="margin-bottom: 1.25rem;">
+              <span class="skills-pill">Python</span>
+              <span class="skills-pill">SQL</span>
+              <span class="skills-pill">Bash</span>
+            </div>
+
+            <p class="logos-title" style="font-size: 0.7rem; margin-bottom: 0.5rem; text-align: left;">Application &amp; Web</p>
+            <div class="skills-list">
+              <span class="skills-pill">Swift</span>
+              <span class="skills-pill">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skills-card" style="flex: 1;">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              Leadership
+            </h3>
+            <div class="skills-list">
+              <span class="skills-pill">Technical Leadership</span>
+              <span class="skills-pill">Mentorship</span>
+              <span class="skills-pill">Cross-Functional Teamwork</span>
+              <span class="skills-pill">Project Management</span>
+              <span class="skills-pill">Consensus Building</span>
+              <span class="skills-pill">Negotiation</span>
+              <span class="skills-pill">Crisis Management</span>
+              <span class="skills-pill">Technical Presentations</span>
+              <span class="skills-pill">Distributed Teams</span>
+              <span class="skills-pill">Business &amp; Strategy Alignment</span>
+            </div>
+          </div>
+          
+        </div> </div> </div>
+  </section>
+
+  <!-- Contact Section & Footer -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2 class="contact-title">Let's Connect</h2>
+        
+        <div class="contact-info-wrapper">
+          <!-- Copy to Clipboard buttons -->
+          <div class="contact-item" data-copy="nickmunarriz@gmail.com" title="Click to copy email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>nickmunarriz@gmail.com</span>
+            <div class="tooltip">Copy Email</div>
+          </div>
+
+          <div class="contact-item" data-copy="New York, NY" title="Click to copy location">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>New York, NY</span>
+            <div class="tooltip">Copy Location</div>
+          </div>
+        </div>
+        
+        <div class="footer-socials">
+          <a href="https://github.com/nickmunarriz" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/nicholasmunarriz/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+        
+        <p class="copyright">&copy; 2026 Nick Munarriz. All Rights Reserved.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Script -->
+  <script src="script.js"></script>
 </body>
 </html>
